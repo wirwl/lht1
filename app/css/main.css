@@ -38,10 +38,10 @@ body {
 	position: relative;
 }
 .page-header {
-	height: 119px;
+	height: 116px;
 	background: #eff3f7;	
 	position: relative;
-	margin-bottom: 39px;
+	margin-bottom: 42px;
 }
 .page-header .header-logo-link{
 	position: absolute;
@@ -54,7 +54,7 @@ body {
 }
 .page-header .socials {
 	position: absolute;
-	right: -16;
+	right: -16px;
 	top: 35px;
 }
 /* Шапка конец */
@@ -87,10 +87,10 @@ body {
 	background-position: -47px 0px;
 }
 .socials .socials-link.vk { background-position:  0px 0px;}
-.socials .socials-link.tw { background-position: -47px 0px;}
-.socials .socials-link.fb { background-position: -94px 0px;}
-.socials .socials-link.gt { background-position: -141px 0px;}
-.socials .socials-link:hover {background-position-y: -47px;}
+.socials .socials-link.tw { background-position: -52px 0px;}
+.socials .socials-link.fb { background-position: -104px 0px;}
+.socials .socials-link.gt { background-position: -156px 0px;}
+.socials .socials-link:hover {background-position-y: -52px;}
 /* Блок социальных ссылок -конец */
 
 
