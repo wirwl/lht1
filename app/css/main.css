@@ -46,7 +46,7 @@ body {
 .page-header .header-logo-link{
 	position: absolute;
 	top: 39px;
-	left: 0;
+	left: 15px;
 }
 .page-header .header-logo-text{
 	position: absolute;
@@ -54,8 +54,8 @@ body {
 }
 .page-header .socials {
 	position: absolute;
-	right: 0;
-	top: 36px;
+	right: -16;
+	top: 35px;
 }
 /* Шапка конец */
 
