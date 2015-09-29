@@ -12,7 +12,7 @@ body {
 .wrapper{
 	position: relative;
 	min-height: 100%;
-	min-width: 970px; 
+	min-width: 970px;
 	height: auto;
 
 }
@@ -202,7 +202,8 @@ body {
 /* общие классы */
 .container {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0px auto;
+	padding-left:32px;
 }
 .text-center{
 	text-align: center;
