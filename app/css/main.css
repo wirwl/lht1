@@ -108,7 +108,7 @@ body {
 	overflow: hidden;
 	background: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 }
 .navigation .navigation-list {
 	list-style: none;
@@ -119,8 +119,25 @@ body {
 	border-top: 2px solid #3ba8c0;
 	margin: 0 11px;
 }
+.navigation .navigation-item:hover {
+	color: #959aa8;
+}
+.navigation .navigation-item .navigation-link:focus{
+	font-style: italic;
+}
 .navigation .navigation-item:first-child {
 	border-top:none;
+}
+.navigation .navigation-item:active {
+	background: #3ba8c0;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px;
+}
+.navigation .navigation-item .navigation-link:active{
+	color: #f9fafb;
+	font-size: 22px;
 }
 /* Навигация - текущий пункт меню */
 .navigation .navigation-item.current{
@@ -232,13 +249,11 @@ body {
 	background: #3ba8c0;	
 	margin-bottom: 0;	
 	font-family: 'fira_sansbook';
-	font-size: 15px;	
-	font-style: normal;	
-	
-	
+	font-size: 20px;
+	font-style: normal;
 	border-top: 2px solid #3ba8c0;
 	border-radius: 4px 4px 0 0;
-	padding: 7px 21px;
+	padding: 4px 21px 3px 21px;
 }
 .contacts-list {
 	list-style:none;	
@@ -246,16 +261,14 @@ body {
 	margin-top: 0;		
 }
 .contacts-item {		
-	padding: 8px 0px 8px 83px;	
+	padding: 8px 0px 7px 83px;
 }
 .contacts-link {
-	display: block;	
 	color: white;	
 	font-family: 'fira_sansbook';
-	font-size: 15px;
+	font-size: 16px;
 	font-style: normal;		
-	text-decoration: none;		
-	
+	text-decoration: none;
 }
 .contacts-item.icon-email {
 	background: #41b9d4 url(../images/email.png) 42px 11px no-repeat;	
@@ -267,10 +280,16 @@ body {
 	background: #51daf8 url(../images/skype.png) 43px 10px no-repeat;	
 	border-bottom: 2px solid #51daf8;
 	border-radius: 0 0 4px 4px;
-	padding-bottom: 6px;
+	padding-bottom: 5px;
 }
 .contacts-item:hover {
 	text-decoration: underline;
+}
+.contacts-item .contacts-link:focus{
+font-style: italic;
+}
+.contacts-item .contacts-link:active {
+	color: #eff3f7;
 }
 .page-header:after, .page-footer:before {
 	content: '';	

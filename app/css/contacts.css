@@ -1,0 +1,18 @@
+.mycontacts {
+    background: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.mycontacts .mycontacts-header {
+    background: #48cbe8;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'fira_sansbook';
+
+    font-weight: normal;
+    border-bottom: 17px solid #67dffa;
+    padding: 42px 66px;
+}
+.mycontacts-body {
+    min-height: 40px;
+}

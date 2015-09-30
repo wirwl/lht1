@@ -11,11 +11,11 @@
 	color: #3ba8c0;
 	border-bottom: 2px #3ba8c0 solid;
 	margin: 0 0 23px 0;
-	padding: 13px 23px;
+    padding: 13px 23px 12px 23px;
 	display: inline-block;
 }
 .aboutbox-body {
-	padding-bottom: 40px;
+	padding-bottom: 43px;
 }
 /* Общие стили для всех секций - конец */
 
@@ -24,8 +24,8 @@
 /* Лицо */
 .image-wrap{
 	float: left;
-	margin-left: 55px;
-	margin-top: 18px;
+	margin-left: 54px;
+	margin-top: 11px;
 }
 .avatar-box{
 	width: 142px;
@@ -43,7 +43,7 @@
 /* Список анкетных данных */
 .aboutbox .worksheet-wrap {
 	float: right;
-	width: 400px;
+	width: 421px;
 }
 .worksheet-list {
 	list-style:none;
@@ -57,6 +57,7 @@
 }
 .worksheet-item{
 margin-bottom: 8px;
+
 }
 .worksheet-what {
 	font-family: 'fira_sansmedium';
