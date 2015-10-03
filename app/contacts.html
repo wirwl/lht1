@@ -74,14 +74,39 @@
                             <a href="skype:wirwlzero" class="contacts-link">wirwlzero</a>
                         </li>
                     </ul>
-                    </h2>
                 </address>
             </aside>
             <!-- Изменяемый контен-->
             <div class="variable-content">
                     <section class="mycontacts">
                         <h2 class="mycontacts-header">У вас интересный проект? Напишите мне</h2>
-                        <div class="mycontacts-body clearfix"></div>
+                        <div class="mycontacts-body">
+                            <form method="POST" action="php/send.php" class="contact-form clearfix">
+                                <div class="wrapper-name clearfix">
+                                    <div class="contact-name">
+                                        <label for="name" class="contact-name-label">Имя</label>
+                                        <input required class="contact-name-input contact-style" id="name" name="name" type="text" placeholder="Как к Вам обращаться">
+                                    </div>
+                                    <div class="contact-email">
+                                        <label for="email" class="contact-email-label">Email</label>
+                                        <input required class="contact-email-input contact-style" id="email" name="email" type="text" placeholder="Куда мне писать">
+                                    </div>
+                                </div>
+                                <div class="contact-message">
+                                    <label for="message" class="contact-textarea-label">Сообщение</label>
+                                    <textarea required id="message" name="message" class="textarea-message contact-style" rows="8" placeholder="Кратко в чём суть" ></textarea>
+                                </div>
+                                <div class="contact-code clearfix">
+                                    <label class="contact-code-label">Введите код, указанный на картинке</label>
+                                    <div class="contact-picture contact-style"></div>
+                                    <div class="wrapper-code">
+                                        <input required class="contact-code-input contact-style" name="code" type="text" placeholder="Введите код">
+                                    </div>
+                                </div>
+                                <input class="buttons buttons-submit" value="Отправить" type="submit">
+                                <input class="buttons buttons-reset" value="Очистить" type="reset">
+                            </form>
+                        </div>
                     </section>
             </div>
         </div>
@@ -93,7 +118,7 @@
         <div class="lock">
             <a href="login.html" class="lock-inner">Войти</a>
         </div>
-        <div class="copyright">&copy 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        <div class="copyright">&copy; 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 </footer>
 <script scr="bower/jquery/dist/jquery.js"></script>

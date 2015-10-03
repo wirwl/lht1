@@ -220,7 +220,7 @@ body {
 .container {
 	width: 960px;
 	margin: 0px auto;
-	padding-left:32px;
+	/*padding-left:32px;*/
 }
 .text-center{
 	text-align: center;

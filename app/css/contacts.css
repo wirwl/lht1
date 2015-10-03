@@ -8,11 +8,98 @@
     color: #ffffff;
     margin: 0;
     font-family: 'fira_sansbook';
-
     font-weight: normal;
     border-bottom: 17px solid #67dffa;
     padding: 42px 66px;
+    margin-bottom: 40px;
+}
+.wrapper-name {
+    margin-bottom: 15px;
 }
 .mycontacts-body {
-    min-height: 40px;
+    font-family: 'fira_sanslight';
+}
+.contact-form {
+    margin: auto;
+    width: 402px;
+}
+.contact-name {
+    float:left;
+}
+.contact-email {
+    float:right;
+}
+.contact-message {
+    margin-bottom: 5px;
+}
+.textarea-message {
+    width: 390px;
+    color: #48cbe8;
+}
+.contact-code {
+    margin-bottom: 20px;
+}
+
+.contact-picture {
+    float: left;
+    width:179px;
+    height: 59px;
+    background: white;
+}
+.wrapper-code {
+    float: right;
+    padding: 18px 0;
+}
+.buttons {
+    font-family: 'fira_sansbook';
+    font-size: 18px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 90px;
+    padding: 2px 22px 0px 22px;
+}
+.buttons-submit {
+    float: left;
+    border-bottom: 2px solid #3ba8c0;
+    background: #48cbe8;
+}
+.buttons-reset {
+    float: right;
+    border-bottom: 2px solid #687b8f;
+    background: #849db5;
+}
+.contact-style {
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 9px 0px 9px 10px;
+}
+.contact-code-input{
+    padding: 4px 0 5px 10px;
+}
+.contact-name-input, .contact-email-input, .contact-code-input{
+    width: 180px;
+    color: #48cbe8;
+}
+
+.contact-name-label, .contact-email-label,
+.contact-textarea-label, .contact-code-label {
+    font-size: 17px;
+    display: block;
+    color: #959aa8;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #48cbe8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #48cbe8;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #48cbe8;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #48cbe8;
 }
