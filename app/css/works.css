@@ -1,0 +1,64 @@
+.aboutbox-body {
+    padding: 0 5px;
+}
+.works-item {
+    display: inline-block;
+    vertical-align:top;
+    width: 179px;
+    margin-bottom: 35px;
+    margin-right: 30px;
+    margin: 0 15px 35px 15px;
+}
+
+.works-item-image {
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid #3ba8c0;
+    text-align: center;
+    vertical-align:middle;
+    padding: 50px 0 50px 0;
+    background: teal;
+    background: url(images/works/work1.png) no-repeat;
+}
+
+.works-item-anchor {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius:4px;
+    border: 2px solid#ffffff;
+    padding: 0 4px;
+}
+.works-item-image:hover .works-item-anchor{
+
+}
+.works-item-caption {
+    font-family:'fira_sanslight_italic';
+    text-align: center;
+    font-size: 13px;
+    color: #48cbe8;
+    margin:5px 0;
+}
+.works-item-description {
+    font-family:'fira_sanslight';
+    text-align: center;
+    line-height: 1.2;
+    color: #4a545d;
+    margin:0;
+}
+.works-item-add {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 33px 0;
+    border-radius: 4px;
+    border: 1px dashed #48cbe8;
+    background: #edf8fc;
+    cursor: pointer;
+}
+.works-add-caption {
+    margin:0;
+    font-family: 'fira_sanslight';
+    font-size: 13px;
+    color:#48cbe8;
+}

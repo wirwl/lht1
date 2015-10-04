@@ -1,0 +1,83 @@
+.main-content {
+    margin-top: 100px;
+
+}
+.container {
+    margin: 0 auto;
+    width: 590px;
+    /*outline: 1px dashed gray;*/
+    border-radius: 4px;
+    overflow: hidden;
+}
+.form-header {
+    font-family: 'fira_sansbook';
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #48cbe8;
+    margin:0px;
+    margin-bottom: 15px;
+    border-bottom: 15px solid #67dffa;
+    padding: 20px;
+}
+.form-body {
+    background: #eff3f7;
+    padding-bottom: 5px;
+    margin: 10px;
+    box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+}
+.form-login {
+    width: 424px;
+    margin: 0 auto;
+    font-family: 'fira_sanslight';
+    font-size: 14px;
+
+}
+.form-label {
+    text-align:center;
+    display: block;
+    font-size: 30px;
+    color: #959aa8;
+    margin-top: 16px;
+}
+.form-input {
+    display: block;
+    width: 392px;
+    margin: 5px auto;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    padding: 19px 15px;
+
+}
+.buttons {
+    border-radius: 8px;
+}
+.buttons:active{
+    border-top: 4px solid #3ba8c0;
+}
+.buttons-submit {
+    font-size: 34px;
+    border-bottom: 4px solid #3ba8c0;
+    display: block;
+    width: 226px;
+    height: 51px;
+    margin: 15px auto;
+    margin-top: 35px;
+    float:none;
+    padding:0px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #48cbe8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #48cbe8;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #48cbe8;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #48cbe8;
+}

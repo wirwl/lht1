@@ -11,10 +11,9 @@ body {
 /* прибьём футер к низу*/
 .wrapper{
 	position: relative;
+	height: auto;
 	min-height: 100%;
 	min-width: 970px;
-	height: auto;
-
 }
 .wrapper:after {
 	content: "";
@@ -302,3 +301,35 @@ font-style: italic;
 	background: -ms-linear-gradient(to right, #f2f6fa 0%, #1c667a 50%, #f2f6fa 100%);
 	background: linear-gradient(to right, #f2f6fa 0%, #1c667a 50%, #f2f6fa 100%);		
 }
+
+/* Стилизация кнопок submit и reset - Начало */
+.buttons {
+	font-family: 'fira_sansbook';
+	font-size: 18px;
+	border-radius: 4px;
+	color: #ffffff;
+	border: none;
+	margin-bottom: 90px;
+	padding: 2px 22px 0px 22px;
+}
+.buttons:hover {
+	border:none;
+}
+.buttons:focus {
+	outline:none;
+}
+.buttons:active{
+	border-top: 2px solid #3ba8c0;
+}
+.buttons-submit {
+	float: left;
+	border-bottom: 2px solid #3ba8c0;
+	background: #48cbe8;
+}
+.buttons-reset {
+	float: right;
+	border-bottom: 2px solid #687b8f;
+	background: #849db5;
+}
+
+/* Стилизация кнопок submit и rest - Конец */
