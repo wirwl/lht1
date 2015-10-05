@@ -25,6 +25,10 @@
             document.getElementById("uploadFile").value = this.value;
         };
 
+        /*
+        $('#wrapper-image').hover(function() {
+            $(this).children('.works-item-image').fadeToggle(999);
+        });*/
 
 
 
