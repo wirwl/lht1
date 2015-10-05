@@ -35,7 +35,7 @@
 .works-item-caption {
     font-family:'fira_sanslight_italic';
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     color: #48cbe8;
     margin:5px 0;
 }
@@ -61,4 +61,7 @@
     font-family: 'fira_sanslight';
     font-size: 13px;
     color:#48cbe8;
+}
+#addproject_popup {
+    display: none;
 }

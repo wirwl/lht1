@@ -1,0 +1,141 @@
+.addproject-win {
+    background: #eff3f7;
+    box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 362px;
+
+}
+.wrapper-header {
+    background: #48cbe8;
+    margin:0;
+    padding: 0;
+    border-bottom: 9px solid #67dffa;
+    padding: 5px 10px;
+}
+.addproject-header{
+    float: left;
+    margin: 0;
+    color: #ffffff;
+    display: inline-block;
+}
+.addproject-button-close {
+    float: right;
+    display: inline-block;
+    padding: 5px 0;
+    margin:0;
+    cursor:pointer;
+
+}
+.wrapper-form {
+    padding: 20px;
+    font-size: 12px;
+    min-height: 424px;
+}
+.addproject-form-label {
+    font-family: 'fira_sansbook';
+    color: #959aa8;
+    display: block;
+    font-size: 16px;
+
+}
+.addproject-form-input {
+    font-family: 'fira_sanslight';
+    font-size: 12px;
+    height: 39px;
+    width: 298px;
+    border-radius: 4px;
+    border: 1px solid #48cbe8;
+    padding: 0px 10px;
+    margin-bottom: 8px;
+}
+.addproject-form-input.form-input {
+    border:none;
+    width: 251px;
+    padding-right:0;
+}
+.addproject-form-inputfile {
+    background: #48cbe8;
+    width: 52px;
+    height: 41px;
+    margin:0;
+    padding:0;
+    vertical-align:top;
+    display:inline-block;
+}
+.addproject-textarea {
+    width: 298px;
+    height: 111px;
+    margin-bottom: 10px;
+    resize:none;
+    border-radius: 4px;
+    border: 1px solid #48cbe8;
+    padding: 10px;
+}
+.buttons-submit {
+    display: block;
+    float:none;
+    margin: 0 auto;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #48cbe8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #48cbe8;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #48cbe8;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #48cbe8;
+}
+
+
+
+.inputBtnSection{
+    background: #ffffff;
+    height:41px;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    width: 318px;
+}
+.disableInputField{
+    display:inline-block;
+    vertical-align:top;
+    height: 27px;
+    margin: 0;
+    font-size:14px;
+    padding:0 3px;
+
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:top;
+    right: -2px;
+
+}
+.uploadBtn{
+    display:inline-block;
+    vertical-align:top;
+    background:url(../images/upload.png) 1px no-repeat ;
+    width: 52px;
+    height: 41px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

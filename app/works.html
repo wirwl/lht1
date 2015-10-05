@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/works.css">
+    <link rel="stylesheet" href="css/addproject.css">
     <!-- modernizr -->
 
 
@@ -111,35 +112,12 @@
                             <p class="works-item-caption">www.site.ru</p>
                             <p class="works-item-description">Информация о проекте 1 превью 2 строки...</p>
                         </div>
-                        <div class="works-item">
-                            <div class="works-item-image">
-                                <a class="works-item-anchor" href="#">название</a>
-                            </div>
-                            <p class="works-item-caption">www.site.ru</p>
-                            <p class="works-item-description">Информация о проекте 1 превью 2 строки...</p>
-                        </div>
-                        <div class="works-item">
-                            <div class="works-item-image">
-                                <a class="works-item-anchor" href="#">название</a>
-                            </div>
-                            <p class="works-item-caption">www.site.ru</p>
-                            <p class="works-item-description">Информация о проекте 1 превью 2 строки...</p>
-                        </div>
-                        <div class="works-item">
-                            <div class="works-item-image">
-                                <a class="works-item-anchor" href="#">название</a>
-                            </div>
-                            <p class="works-item-caption">www.site.ru</p>
-                            <p class="works-item-description">Информация о проекте 1 превью 2 строки...</p>
-                        </div>
-
-                        <div class="works-item">
+                        <div id="addproject" class="works-item">
                             <div class="works-item-add">
                                 <img src="images/add.png">
                                 <p class="works-add-caption">Добавить проект</p>
                             </div>
                         </div>
-
                     </div>
                 </section>
             </div>
@@ -155,8 +133,35 @@
         <div class="copyright">&copy; 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 </footer>
-<script scr="bower/jquery/dist/jquery.js"></script>
-<script scr="js/main.js"></script>
+
+<div id="addproject_popup" class="addproject-win">
+    <div class="wrapper-header clearfix">
+        <h2 class="addproject-header">Добавление проекта</h2>
+        <img class="addproject-button-close" src="images/close.png" height="25" width="25">
+    </div>
+    <form class="wrapper-form" method="post" action="php/anp.php">
+        <label class="addproject-form-label">Название проекта</label>
+        <input type="text" class="addproject-form-input" name="name-project" id="name-project" placeholder="Введите название"required>
+        <label class="addproject-form-label">Картинка проекта</label>
+        <div class="inputBtnSection">
+        <input id="uploadFile" type="text" class="addproject-form-input form-input" required placeholder="Загрузите изображение">
+        <label class="fileUpload">
+            <input id="uploadBtn" type="file" class="upload">
+            <span class="uploadBtn"></span>
+        </label>
+        </div>
+        <label class="addproject-form-label">URL проекта</label>
+        <input type="text" class="addproject-form-input" name="url-project" id="url-project" placeholder="Добавьте ссылку" required>
+        <label class="addproject-form-label">Описание</label>
+        <textarea class="addproject-textarea" name="addproject-textarea" id="addproject-textarea" required placeholder="Пара слов о вашем проекте"></textarea>
+        <input type="submit" class="buttons buttons-submit" value="Добавить">
+
+    </form>
+</div>
+
+<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower/bPopup/jquery.bpopup.js" ></script>
+<script type="text/javascript" src="js/works.js"></script>
 </body>
 
 </html>
