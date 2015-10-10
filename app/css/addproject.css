@@ -51,8 +51,10 @@
 }
 .addproject-form-input.form-input {
     border:none;
-    width: 251px;
+    width: 260px;
     padding-right:0;
+    padding-bottom:0;
+    height:41px;
 }
 .addproject-form-inputfile {
     background: #48cbe8;
@@ -96,6 +98,7 @@
 
 
 .inputBtnSection{
+    position:relative;
     background: #ffffff;
     height:41px;
     border: 1px solid #48cbe8;
@@ -113,17 +116,17 @@
 }
 
 .fileUpload {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     display:inline-block;
     vertical-align:top;
-    right: -2px;
+    right: 0px;
 
 }
 .uploadBtn{
     display:inline-block;
     vertical-align:top;
-    background:url(../images/upload.png) 1px no-repeat ;
+    background:#48cbe8 url(../images/upload.png) 1px no-repeat ;
     width: 52px;
     height: 41px;
 }

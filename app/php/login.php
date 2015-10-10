@@ -1,5 +1,9 @@
 <?php
-echo 'Input data: ';
-echo $_POST['login']." ";
-echo $_POST['pass'];
+
+$data = array();
+
+header("Content-type: application/json");
+echo json_encode($data);
+exit;
+
 ?>

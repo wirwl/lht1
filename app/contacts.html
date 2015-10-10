@@ -15,6 +15,7 @@
     <link href="fonts/Proxima-Nova/proximanovacond-semibold.css" rel="stylesheet">
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
@@ -81,26 +82,26 @@
                     <section class="aboutbox">
                         <h2 class="aboutbox-header">У вас интересный проект? Напишите мне</h2>
                         <div class="aboutbox-body">
-                            <form method="POST" action="php/send.php" class="contact-form clearfix">
+                            <form method="POST" action="" role="form" class="contact-form clearfix" id="form-contacts">
                                 <div class="wrapper-name clearfix">
                                     <div class="contact-name">
                                         <label for="name" class="contact-name-label">Имя</label>
-                                        <input required class="contact-name-input contact-style" id="name" name="name" type="text" placeholder="Как к Вам обращаться">
+                                        <input qtip-content="Вы не ввели имя" qtip-position="left"  class="contact-name-input contact-style" id="name" name="name" type="text" placeholder="Как к Вам обращаться">
                                     </div>
                                     <div class="contact-email">
                                         <label for="email" class="contact-email-label">Email</label>
-                                        <input required class="contact-email-input contact-style" id="email" name="email" type="text" placeholder="Куда мне писать">
+                                        <input qtip-content="Вы не ввели email" qtip-position="right" class="contact-email-input contact-style" id="email" name="email" type="text" placeholder="Куда мне писать">
                                     </div>
                                 </div>
                                 <div class="contact-message">
                                     <label for="message" class="contact-textarea-label">Сообщение</label>
-                                    <textarea required id="message" name="message" class="textarea-message contact-style" rows="8" placeholder="Кратко в чём суть" ></textarea>
+                                    <textarea qtip-content="Ваш вопрос" qtip-position="left" id="message" name="message" class="textarea-message contact-style" rows="8" placeholder="Кратко в чём суть" ></textarea>
                                 </div>
                                 <div class="contact-code clearfix">
                                     <label class="contact-code-label">Введите код, указанный на картинке</label>
                                     <div class="contact-picture contact-style"></div>
                                     <div class="wrapper-code">
-                                        <input required class="contact-code-input contact-style" name="code" type="text" placeholder="Введите код">
+                                        <input qtip-content="Вы не ввели код" qtip-position="right" class="contact-code-input contact-style" name="code" type="text" placeholder="Введите код">
                                     </div>
                                 </div>
                                 <input class="buttons buttons-submit" value="Отправить" type="submit">
@@ -121,8 +122,12 @@
         <div class="copyright">&copy; 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 </footer>
-<script scr="bower/jquery/dist/jquery.js"></script>
-<script scr="js/main.js"></script>
+<script type="text/javascript"  src="bower/jquery/dist/jquery.js"></script>
+<script type="text/javascript"  src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+<script type="text/javascript"  src="bower/qtip2/jquery.qtip.js"></script>
+<script type="text/javascript"  src="js/main.js"></script>
+<script type="text/javascript"  src="js/validation.js"></script>
+<script type="text/javascript"  src="js/contacts.js"></script>
 </body>
 
 </html>

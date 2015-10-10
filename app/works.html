@@ -9,12 +9,13 @@
     <meta name="keywords" content="portfolio freelance">
     <meta name="author" content="Dmitry Levchenko">
     <!-- favicon.ico -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="fonts/fira/fira.css" rel="stylesheet">
     <link href="fonts/Proxima-Nova/proximanovacond-semibold.css" rel="stylesheet">
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/about.css">
@@ -161,28 +162,41 @@
         <h2 class="addproject-header">Добавление проекта</h2>
         <img class="addproject-button-close" src="images/close.png" height="25" width="25">
     </div>
-    <form class="wrapper-form" method="post" action="php/anp.php">
+    <form class="wrapper-form" role="form" method="POST" action="php/anp.php" id="form-addnewproject">
+        <div class="form-success">
+            <p class="form-msg-p-header">Ура!</p>
+            <p class="form-msg-p-text">Проект успешно добавлен.</p>
+            <div id="form-success-x" class="form-msg-close">x</div>
+        </div>
+        <div class="form-error">
+            <p class="form-msg-p-header">Ошибка!</p>
+            <p class="form-msg-p-text">Невозможно добавить проект.</p>
+            <div class="form-msg-close">x</div>
+        </div>
         <label class="addproject-form-label">Название проекта</label>
-        <input type="text" class="addproject-form-input" name="name-project" id="name-project" placeholder="Введите название"required>
+        <input qtip-content="введите название" type="text" class="addproject-form-input" name="name-project" id="name-project" placeholder="Введите название">
         <label class="addproject-form-label">Картинка проекта</label>
         <div class="inputBtnSection">
-        <input id="uploadFile" type="text" class="addproject-form-input form-input" required placeholder="Загрузите изображение">
+        <input qtip-content="изображение" id="uploadFile" type="text" class="addproject-form-input form-input" placeholder="Загрузите изображение">
         <label class="fileUpload">
             <input id="uploadBtn" type="file" class="upload">
             <span class="uploadBtn"></span>
         </label>
         </div>
         <label class="addproject-form-label">URL проекта</label>
-        <input type="text" class="addproject-form-input" name="url-project" id="url-project" placeholder="Добавьте ссылку" required>
+        <input qtip-content="ссылка на проект"  type="text" class="addproject-form-input" name="project-url" id="project-url" placeholder="Добавьте ссылку" >
         <label class="addproject-form-label">Описание</label>
-        <textarea class="addproject-textarea" name="addproject-textarea" id="addproject-textarea" required placeholder="Пара слов о вашем проекте"></textarea>
-        <input type="submit" class="buttons buttons-submit" value="Добавить">
+        <textarea qtip-content="описание проекта" class="addproject-textarea" name="addproject-textarea" id="addproject-textarea"  placeholder="Пара слов о вашем проекте"></textarea>
+        <input type="submit" class="buttons buttons-submit" value="Добавить" id="form-submit">
 
     </form>
 </div>
 
 <script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 <script type="text/javascript" src="bower/bPopup/jquery.bpopup.js" ></script>
+<script type="text/javascript" src="bower/qtip2/jquery.qtip.js" ></script>
+<script type="text/javascript" src="js/validation.js" ></script>
 <script type="text/javascript" src="js/works.js"></script>
 </body>
 

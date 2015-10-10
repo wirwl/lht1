@@ -15,6 +15,7 @@
     <link href="fonts/Proxima-Nova/proximanovacond-semibold.css" rel="stylesheet">
     <!-- bower CSS -->
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
@@ -32,9 +33,9 @@
             <h2 class="form-header">Авторизируйтесь</h2>
                 <form action="php/login.php" class="form-login" name="form-login" method="post">
                     <label class="form-label" for="login">Логин</label>
-                    <input class="form-input" type="text" placeholder="Введите логин" required name="login" id="login">
+                    <input class="form-input" type="text" placeholder="Введите логин" name="login" id="login" qtip-content="введите логин">
                     <label class="form-label" for="pass">Пароль</label>
-                    <input class="form-input"  type="text" placeholder="Введите пароль" required name="pass" id="pass">
+                    <input class="form-input"  type="text" placeholder="Введите пароль" name="pass" id="pass" qtip-content="введите пароль">
                     <input class="buttons buttons-submit" type="submit" value="Войти">
                 </form>
             </div>
@@ -51,8 +52,12 @@
         <div class="copyright">&copy; 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
     </div>
 </footer>
-<script scr="bower/jquery/dist/jquery.js"></script>
-<script scr="js/main.js"></script>
+<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower/qtip2/jquery.qtip.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+
 </body>
 
 </html>
