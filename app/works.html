@@ -30,6 +30,7 @@
 <!--[if lt IE 8]>
 <p> Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 <![endif]-->
+
 <div class="wrapper">
     <div class="main-content">
         <header class="page-header">
@@ -157,7 +158,7 @@
     </div>
 </footer>
 
-<div id="addproject_popup" class="addproject-win">
+<div id="addproject_popup" class="addproject-win css3pie">
     <div class="wrapper-header clearfix">
         <h2 class="addproject-header">Добавление проекта</h2>
         <img class="addproject-button-close" src="images/close.png" height="25" width="25">
@@ -174,19 +175,19 @@
             <div class="form-msg-close">x</div>
         </div>
         <label class="addproject-form-label">Название проекта</label>
-        <input qtip-content="введите название" type="text" class="addproject-form-input" name="name-project" id="name-project" placeholder="Введите название">
+        <input qtip-content="введите название" type="text" class="addproject-form-input css3pie" name="name-project" id="name-project" placeholder="Введите название">
         <label class="addproject-form-label">Картинка проекта</label>
-        <div class="inputBtnSection">
-        <input qtip-content="изображение" id="uploadFile" type="text" class="addproject-form-input form-input" placeholder="Загрузите изображение">
+        <div class="inputBtnSection css3pie">
+        <input qtip-content="изображение" id="uploadFile" type="text" class="addproject-form-input form-input css3pie" placeholder="Загрузите изображение">
         <label class="fileUpload">
             <input id="uploadBtn" type="file" class="upload">
             <span class="uploadBtn"></span>
         </label>
         </div>
         <label class="addproject-form-label">URL проекта</label>
-        <input qtip-content="ссылка на проект"  type="text" class="addproject-form-input" name="project-url" id="project-url" placeholder="Добавьте ссылку" >
+        <input qtip-content="ссылка на проект"  type="text" class="addproject-form-input css3pie" name="project-url" id="project-url" placeholder="Добавьте ссылку" >
         <label class="addproject-form-label">Описание</label>
-        <textarea qtip-content="описание проекта" class="addproject-textarea" name="addproject-textarea" id="addproject-textarea"  placeholder="Пара слов о вашем проекте"></textarea>
+        <textarea qtip-content="описание проекта" class="addproject-textarea css3pie" name="addproject-textarea" id="addproject-textarea"  placeholder="Пара слов о вашем проекте"></textarea>
         <input type="submit" class="buttons buttons-submit" value="Добавить" id="form-submit">
 
     </form>
@@ -198,6 +199,7 @@
 <script type="text/javascript" src="bower/qtip2/jquery.qtip.js" ></script>
 <script type="text/javascript" src="js/validation.js" ></script>
 <script type="text/javascript" src="js/works.js"></script>
+<!--[if lte IE 8]><script type="text/javascript" src="js/ie-opacity-polyfill.js"></script><![endif]-->
 </body>
 
 </html>

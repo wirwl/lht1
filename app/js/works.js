@@ -5,7 +5,6 @@ var myModule = (function () {
     };
 
     var _setUpListeners = function () {
-        console.log('we in _setUpListeners function');
         $('#addproject').on('click', _showModal);
         $('#form-addnewproject').on('submit', _addProject);
         $('.form-msg-close').on('click', _hideMSG);
@@ -17,10 +16,8 @@ var myModule = (function () {
 
     var _showModal = function (e) {
         e.preventDefault();
-
         var divPopup = $('#addproject_popup'),
-            form=divPopup.find('.wrapper-form');
-
+            form = divPopup.find('.wrapper-form');
         divPopup.bPopup({
             closeClass: 'addproject-button-close',
             onClose: function () {
@@ -36,37 +33,31 @@ var myModule = (function () {
         var form = $('#form-addnewproject'),
             url = 'php/anp.php',
             answer = _ajaxForm(form, url);
-
-            if(answer) {
-                answer.done(function (ans) {
-                    console.log("Done.Answer: " + ans);
-                    if (ans.status === 'OK') {
-                        form.find('.form-error').hide();
-                        form.find('.form-success').show();
-                    } else {
-                        form.find('.form-success').hide();
-                        form.find('.form-error').show();
-                    }
-                });
-            }
+        if (answer) {
+            answer.done(function (ans) {
+                if (ans.status === 'OK') {
+                    form.find('.form-error').hide();
+                    form.find('.form-success').show();
+                } else {
+                    form.find('.form-success').hide();
+                    form.find('.form-error').show();
+                }
+            });
+        }
     };
-
-
     var _ajaxForm = function (form, url) {
         if (!validation.validateForm(form)) return false;
         data = form.serialize();
-
         var result = $.ajax({
             url: url,
             type: 'POST',
             dataType: 'json',
             data: data
         }).fail(function (ans) {
-            form.find('.error-mes').text('На сервере произошла ошибка').show();
+            form.find('.form-error').text('На сервере произошла ошибка').show();
         })
         return result;
     }
-
     return {
         init: init
     };

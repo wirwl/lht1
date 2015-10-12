@@ -1,9 +1,13 @@
+.css3pie {
+
+}
+
 .aboutbox {
     background: #eff3f7;
     border-radius: 4px;
     overflow: hidden;
 }
-.aboutbox .aboutbox-header{
+.aboutbox .aboutbox-header {
     display: block;
     background: #48cbe8;
     color: #ffffff;
@@ -14,6 +18,7 @@
     padding: 42px 46px;
     margin-bottom: 35px;
 }
+
 .aboutbox-body {
     font-family: 'fira_sanslight';
 }
@@ -21,37 +26,45 @@
 .wrapper-name {
     margin-bottom: 15px;
 }
+
 .contact-form {
     margin: auto;
     width: 402px;
 }
+
 .contact-name {
-    float:left;
+    float: left;
 }
+
 .contact-email {
-    float:right;
+    float: right;
 }
+
 .contact-message {
     margin-bottom: 5px;
 }
+
 .textarea-message {
     width: 390px;
     color: #48cbe8;
 }
+
 .contact-code {
     margin-bottom: 20px;
 }
 
 .contact-picture {
     float: left;
-    width:179px;
+    width: 179px;
     height: 59px;
     background: white;
 }
+
 .wrapper-code {
     float: right;
     padding: 18px 0;
 }
+
 /*
 .buttons {
     font-family: 'fira_sansbook';
@@ -89,11 +102,18 @@
     border-radius: 4px;
     font-size: 13px;
     padding: 9px 0px 9px 10px;
+
 }
-.contact-code-input{
+.no-borderradius .contact-style {
+    position: relative;
+    behavior: url(pie2/PIE.htc);
+}
+
+.contact-code-input {
     padding: 4px 0 5px 10px;
 }
-.contact-name-input, .contact-email-input, .contact-code-input{
+
+.contact-name-input, .contact-email-input, .contact-code-input {
     width: 180px;
     color: #48cbe8;
 }
@@ -104,20 +124,29 @@
     display: block;
     color: #959aa8;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #48cbe8;
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #48cbe8;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #48cbe8;
-    opacity:  1;
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #48cbe8;
+    opacity: 1;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #48cbe8;
-    opacity:  1;
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #48cbe8;
+    opacity: 1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    #48cbe8;
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #48cbe8;
 }
+
 .qtip-mystyle {
     font-family: 'fira_sansbook';
     font-size: 13px;
@@ -127,10 +156,4 @@
     border: 1px solid #f97e76;
 
 }
-.qtip-mystyle2 .qtip-corner {
-    height: 3px;
-}
-.has-error {
-    border:1px solid red;
-    background:rgba(249,126,118,0.33);
-}
+

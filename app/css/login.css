@@ -6,7 +6,6 @@
     margin: 0 auto;
     width: 590px;
     /*outline: 1px dashed gray;*/
-    border-radius: 4px;
     overflow: hidden;
 }
 .form-header {
@@ -23,8 +22,11 @@
 .form-body {
     background: #eff3f7;
     padding-bottom: 5px;
+    overflow: hidden;
     margin: 10px;
     box-shadow: 0px 4px 6.86px 0.14px rgba(13, 16, 7, 0.29);
+    border-radius: 5px;
+
 }
 .form-login {
     width: 424px;
@@ -45,6 +47,7 @@
     width: 392px;
     margin: 5px auto;
     border: 1px solid #48cbe8;
+    color: #48cbe8;
     border-radius: 4px;
     padding: 19px 15px;
 

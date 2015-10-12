@@ -11,9 +11,7 @@
 ;(function($) {
     // DOM Ready
     $(function() {
-            console.log("1");
             if (!Modernizr.input.placeholder) {
-                console.log("2");
                 $('input, textarea').placeholder();
             }
     });

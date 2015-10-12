@@ -337,6 +337,10 @@ font-style: italic;
 /* Стилизация кнопок submit и rest - Конец */
 
 
+
+
+
+
 .qtip-mystyle {
 	font-family: 'fira_sansbook';
 	font-size: 13px;
@@ -344,12 +348,34 @@ font-style: italic;
 	background: #f97e76;
 	border-radius: 2px;
 	border: 1px solid #f97e76;
+}
 
-}
-.qtip-mystyle2 .qtip-corner {
-	height: 3px;
-}
 .has-error {
 	border:1px solid red;
 	background:rgba(249,126,118,0.33);
+}
+
+.css3pie-min {
+	behavior: url(pie2/PIE.htc);
+}
+.css3pie {
+	position: relative;
+	behavior: url(pie2/PIE.htc);
+}
+
+.disable {display:none;}/*for debug only*/
+
+
+.has-error {
+	border: 1px solid red;
+	background: rgba(249, 126, 118, 0.33);
+	position: relative;
+	behavior: url(pie2/PIE.htc);
+}
+
+.no-rgba .has-error {
+	/*for ie8*/
+	background: #f97e76;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
 }

@@ -23,16 +23,25 @@
 }
 
 .fadeout {
+    opacity: 0;
     position: absolute;
     top:0;
     left:0;
     width: 181px;
     height: 127px;
     background: rgba(1, 108, 164, 0.6);
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
+    /*filter: alpha(opacity=0);*/
+
+}
+.no-opacity .fadeout {
+    zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
     opacity: 0;
 }
-
 .works-item-detail {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,10 +51,19 @@
     color: #ffffff;
     font-size: 13px;
     border-radius:4px;
-    border: 2px solid#ffffff;
+    border: 2px solid #ffffff;
     padding: 0 4px;
+    behavior: url(pie2/PIE.htc);
+}
+.no-csstransforms .works-item-detail {
+    top: 40%;
+    left: 30%
+
 }
 .fadeout:hover, .works-item-detail:hover {
+    zoom:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
     opacity: 1;
 }
 .addproject-anchor {
