@@ -7,4 +7,4 @@
 5. gulp
 
 Личная страница фрилансера
-![](https://github.com/wirwl/lht1/blob/master/lht1.png)
+![](https://github.com/wirwl/lht1/lht1.png)
